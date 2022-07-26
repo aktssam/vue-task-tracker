@@ -1,7 +1,7 @@
 # Task Tracker - Vue App
 
 this app is the result of practicing for build a Simple Vue App from Vue JS Crash Course below
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qZXt1Aom3Cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Vue JS Crash Course](https://img.youtube.com/vi/qZXt1Aom3Cs/0.jpg)](https://www.youtube.com/watch?v=qZXt1Aom3Cs)
 
 ## Project setup
 ```
