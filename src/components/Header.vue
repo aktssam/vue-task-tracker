@@ -2,7 +2,7 @@
 	<header>
 		<h1>{{ title }}</h1>
 		<Button
-			@toggle-add-task="$emit('toggle-add-task')"
+			@btn-toggle="$emit('btn-toggle')"
 			:text="showAddTask ? 'Close' : 'Add Task'"
 			:color="showAddTask ? '#db4e35' : ''"
 		/>
@@ -21,7 +21,7 @@ export default {
 	components: {
 		Button,
 	},
-	emits: ['toggle-add-task'],
+	emits: ['btn-toggle'],
 }
 </script>
 

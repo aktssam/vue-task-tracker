@@ -2,7 +2,7 @@
 	<div class="container">
 		<Header
 			title="Task Tracker"
-			@toggle-add-task="toggleAddTask"
+			@btn-toggle="toggleAddTask"
 			:showAddTask="showAddTask"
 		/>
 		<div v-show="showAddTask">
