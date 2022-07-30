@@ -9,6 +9,16 @@
 				<input v-model="date" type="date" name="date" id="date" />
 				<input v-model="time" type="time" name="time" id="time" />
 			</div>
+			<div class="reminder">
+				<input
+					v-model="reminder"
+					type="checkbox"
+					name="reminder"
+					id="reminder"
+				/>
+				<label for="reminder">Set Reminder &nbsp;&nbsp; </label>
+			</div>
+			<small>*you can double click the task to set reminder later</small>
 
 			<button class="btn submit">Save Task</button>
 		</form>
@@ -23,7 +33,7 @@ export default {
 			text: '',
 			date: '',
 			time: '',
-			reminder: true,
+			reminder: false,
 		}
 	},
 	methods: {
@@ -36,7 +46,6 @@ export default {
 			}
 
 			const newTask = {
-				id: Math.floor(Math.random() * 10000),
 				text: this.text,
 				date: this.date,
 				time: this.time,
@@ -49,7 +58,7 @@ export default {
 			this.text = ''
 			this.date = ''
 			this.time = ''
-			this.reminder = ''
+			this.reminder = false
 		},
 	},
 }
@@ -64,6 +73,17 @@ input {
 }
 .input-group {
 	display: flex;
+}
+
+.reminder {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+input#reminder {
+	width: auto;
+	margin-right: 8px;
 }
 
 #date {
@@ -81,5 +101,9 @@ input {
 	width: 100%;
 	background-color: rgb(182, 202, 245);
 	color: black;
+}
+
+small {
+	font-size: 12px;
 }
 </style>

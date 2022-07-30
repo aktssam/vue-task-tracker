@@ -2,6 +2,7 @@
 	<div
 		@dblclick="$emit('toggle-reminder', task.id)"
 		:class="[task.reminder ? 'reminder' : '', 'task']"
+		title="Double click for toggling reminder 🔔"
 	>
 		<div class="content">
 			<h3>{{ task.text }}</h3>
@@ -22,9 +23,7 @@
 <script>
 export default {
 	name: 'Task',
-	props: {
-		task: Object,
-	},
+	props: { task: Object },
 }
 </script>
 
@@ -36,6 +35,11 @@ p i.fa {
 	color: red;
 }
 .task {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+
 	display: flex;
 	margin: 16px 0px;
 	padding: 10px 15px;

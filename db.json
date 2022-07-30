@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "text": "Make a Assignment for tomorrow",
+      "date": "2022-07-30",
+      "time": "20:49",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Make Database Model",
+      "date": "2022-07-31",
+      "time": "00:52",
+      "reminder": false,
+      "id": 2
+    }
+  ]
+}
